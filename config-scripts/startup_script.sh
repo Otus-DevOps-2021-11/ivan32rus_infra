@@ -1,8 +1,3 @@
-#for connect
-testapp_IP = 51.250.15.150 
-testapp_port = 9292
-
-#create instance
 #!/bin/bash
 yc compute instance create \
   --name reddit-app \
