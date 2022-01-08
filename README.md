@@ -1,5 +1,5 @@
 #for connect
-testapp_IP = 51.250.15.150 
+testapp_IP = 51.250.10.44 
 testapp_port = 9292
 
 #create instance
