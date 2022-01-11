@@ -1,7 +1,12 @@
 {
-	"folder_id": "myexample",
-	"service_account_key_file": "my.key",
-	"source_image_family": "ubuntu-1604-lts",
-	"ssh_username": "ubuntu",
-	"token": "1111111"
+            "service_account_key_file": "key.json",
+            "folder_id": "test",
+            "source_image_family": "ubuntu-1604-lts",
+            "image_family": "reddit-base",
+            "ssh_username": "ubuntu",
+            "platform_id": "standard-v1",
+            "disk_type": "network-hdd",
+            "disk_size_gb": 13,
+            "use_ipv4_nat": true
+            "use_internal_ip": false,
 }

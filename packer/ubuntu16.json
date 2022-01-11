@@ -1,18 +1,17 @@
 {
 "builders": [
-        {
-            "type": "yandex",
-			"token": "{{user `token`}}",
+{
             "service_account_key_file": "{{user `service_account_key_file`}}",
-            "folder_id": "{{user `folder_id`}}",
+            "folder_id": {{user  `folder_id`}},
             "source_image_family": "{{user `source_image_family`}}",
-            "image_name": "reddit-base-{{timestamp}}",
-            "image_family": "reddit-base",
+            "image_family": "{{user `image_family`}}",
             "ssh_username": "{{user `ssh_username`}}",
-            "platform_id": "standard-v1",
+            "platform_id": "{{user `platform_id`}}",
+            "disk_type": "{{user `disk_type`}}",
+            "disk_size_gb": "{{user `disk_size_gb`}}",
             "use_ipv4_nat": true
-        }
-    ],
+            "use_internal_ip": false,
+}
 
     "provisioners": [
         {
