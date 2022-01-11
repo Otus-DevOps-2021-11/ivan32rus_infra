@@ -1,0 +1,5 @@
+{
+  "service_account_key_file": "mykey",
+  "folder_id": "myfolrerid",
+  "source_image_family": "myubuntu",
+}
