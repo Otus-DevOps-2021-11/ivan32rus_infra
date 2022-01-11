@@ -7,6 +7,6 @@
             "platform_id": "standard-v1",
             "disk_type": "network-hdd",
             "disk_size_gb": 13,
-            "use_ipv4_nat": true
-            "use_internal_ip": false,
+            "use_ipv4_nat": true,
+            "use_internal_ip": false
 }
