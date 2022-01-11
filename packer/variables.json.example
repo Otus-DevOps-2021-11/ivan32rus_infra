@@ -1,5 +1,7 @@
 {
-  "service_account_key_file": "mykey",
-  "folder_id": "myfolrerid",
-  "source_image_family": "myubuntu",
+	"folder_id": "myexample",
+	"service_account_key_file": "my.key",
+	"source_image_family": "ubuntu-1604-lts",
+	"ssh_username": "ubuntu",
+	"token": "1111111"
 }
