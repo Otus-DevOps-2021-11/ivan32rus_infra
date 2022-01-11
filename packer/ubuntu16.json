@@ -1,29 +1,32 @@
 {
+
 "builders": [
-{
+          {
             "service_account_key_file": "{{user `service_account_key_file`}}",
             "folder_id": "{{user  `folder_id`}}",
             "source_image_family": "{{user `source_image_family`}}",
             "image_family": "{{user `image_family`}}",
             "ssh_username": "{{user `ssh_username`}}",
             "platform_id": "{{user `platform_id`}}",
-            "disk_type": "{{user `disk_type`}}",
+            "disk_type": "{{user `network-ssd`}}",
             "disk_size_gb": "{{user `disk_size_gb`}}",
             "use_ipv4_nat": true,
             "use_internal_ip": false
-}
 
-    "provisioners": [
-        {
+           }
+            ],
+
+"provisioners": [
+          {
             "type": "shell",
             "script": "scripts/install_ruby.sh",
             "execute_command": "sudo {{.Path}}"
-        },
-        {
+          },
+          {
             "type": "shell",
             "script": "scripts/install_mongodb.sh",
             "execute_command": "sudo {{.Path}}"
         }
-    ]
+         ]
 
 }
