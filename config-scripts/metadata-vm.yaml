@@ -1,0 +1,15 @@
+#cloud-config
+disable_root: true
+timezone: Europe/Moscow
+repo_update: true
+repo_upgrade: true
+apt:
+  preserve_sources_list: true
+
+users:
+  - name: yc-user
+    groups: sudo
+    shell: /bin/bash
+    sudo: ['ALL=(ALL) NOPASSWD:ALL']
+    ssh-authorized-keys:
+      - "ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAABgQDjrE2eRvSFnOphUUTPWv2Py29fpq6qe9jp+sbB4F1eyYWchMEaK/Swov8uamxvtlx0imKwq0JQyDxSKqdUPFim5tV52eNePbDB9iUTd2lyGfQn2U1krfeattKhyWAyLo7b+vsrFvYLT+MlAtx903aC3Qes+wqW8b2PuMXVByPoWrbK626icAx/7iLx2KdNopGaWQeKfYHQW2B7HBwsPxmIbQ02iHIltf1E6KzfFntnTJ/Qmw2walOsP5abZ2kTpCDVaxcFkJXcKg0LcbaOgd3wwtNEUR59benSf6Ozjh7qxdmtXgfM1KSLTztxgkO/YIlZvtn0tWWeZLgPY59Xk18MfE0Iz65dBfxnQQUp75vLW9NeGifRqHsXsNxlYDNdDeZLAVS/DIeSkooxZAUPyX8yHaJgpEvDf3YMgdmBCdgoptIWZZCChUiAHkrWRu4EI0foXo04pRyMrAdlyjeGOUYMbCc0JxMfBLWIwFuwDr9AZ0CVrMlUwcA7IDozkYaBabc= test@test"
