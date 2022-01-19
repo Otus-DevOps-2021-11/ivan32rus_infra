@@ -5,12 +5,19 @@ provider "yandex" {
   zone      = var.zone
 }
 
+module "vpc" {
+  source      = "../modules/vpc"
+  sub       = var.sub
+  #envare = var.envare
+}
+
 module "app" {
   source          = "../modules/app"
   public_key_path = var.public_key_path
   private_key_path = var.private_key_path
   app_disk_image  = var.app_disk_image
-  subnet_id       = var.subnet_id
+  subnet_id       = module.vpc.subnet_id
+  #envare      = var.envare
 }
 
 
@@ -19,6 +26,8 @@ module "db" {
   public_key_path = var.public_key_path
   #private_key_path = var.private_key_path
   db_disk_image   = var.db_disk_image
-  subnet_id       = var.subnet_id
+  subnet_id       = module.vpc.subnet_id
+  #envare      = var.envare
+
 }
 
