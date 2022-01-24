@@ -7,21 +7,19 @@
         "vars": {
             "ansible_ssh_user": "ubuntu",
             "ansible_ssh_private_key_file": "~/.ssh/id_rsa",
-            #"example_variable": "value"
+            "example_variable": "value"
         }
     },
     "_meta": {
         "hostvars": {
             "62.84.125.183": {
-                "reddit": "db"
+                "host_specific_var": "db"
             },
             "62.84.124.227": {
-                "reddit": "app"
+                "host_specific_var": "app"
             }
         }
     }
 }
-
-
 
 
