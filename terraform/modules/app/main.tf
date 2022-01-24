@@ -32,14 +32,6 @@ resource "yandex_compute_instance" "app" {
   # путь до приватного ключа
   private_key = "${file(var.private_key_path)}" 
   }
-
-  provisioner "file" {
-  source = "../files/puma.service"
-  destination = "/tmp/puma.service"
-  }
-
-  provisioner "remote-exec" {
-  script = "../files/deploy.sh"
-  } 
 }
+
 

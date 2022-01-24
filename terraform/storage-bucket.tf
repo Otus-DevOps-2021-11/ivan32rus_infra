@@ -7,8 +7,8 @@ provider "yandex" {
 
 resource "yandex_storage_bucket" "storage-otus" {
     bucket     = "test-otus"
-    access_key = "access_key"
-    secret_key = "secret_key"
+    access_key = "aGNoNM-_HU3IRuobitDa"
+    secret_key = "9N297By0l5AILqPiCTGnyw1I74O5YqaDQNn-mzwS"
 
   }
 
