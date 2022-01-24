@@ -7,7 +7,7 @@
         "vars": {
             "ansible_ssh_user": "ubuntu",
             "ansible_ssh_private_key_file": "~/.ssh/id_rsa",
-            "example_variable": "value"
+            #"example_variable": "value"
         }
     },
     "_meta": {
@@ -21,4 +21,7 @@
         }
     }
 }
+
+
+
 
