@@ -24,5 +24,15 @@
   metadata = {
   ssh-keys = "ubuntu:${file(var.public_key_path)}"
   }
+  
+  connection {
+    type = "ssh"
+    host = self.network_interface.0.nat_ip_address 
+    user = "ubuntu"
+    #agent = true
+    # путь до приватного ключа
+    private_key = "${file(var.private_key_path)}"
+    }
 }
+
 
