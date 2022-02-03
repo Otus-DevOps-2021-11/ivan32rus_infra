@@ -1,26 +1,27 @@
 {
-
 "builders": [
           {
-            "type": "yandex",
-            "service_account_key_file": "{{user `service_account_key_file`}}",
-            "folder_id": "{{user `folder_id`}}",
-            "source_image_family": "{{user `source_image_family`}}",
-            "ssh_username": "test",
-            "disk_type": "network-ssd",
-            "disk_size_gb": 13,
-            "use_ipv4_nat": true,
-            "use_internal_ip": false
-
-           }
-            ],
+                  "type": "yandex",
+                  "service_account_key_file": "/DEVOPS_1/key.json",
+                  "folder_id": "b1g93ri2prko6ifh9n8v",
+                  "source_image_family": "ubuntu-1604-lts",
+                  "image_name": "reddit-base-app-{{timestamp}}",
+                  "image_family": "reddit-base",
+                  "ssh_username": "ubuntu",
+                  "platform_id": "standard-v1",
+                  "disk_type": "network-hdd",
+                  "disk_size_gb": 10,
+                  "use_ipv4_nat": true,
+                  "use_internal_ip": false
+          }
+           ],
 
 "provisioners": [
-          {
-            "type": "shell",
-            "script": "scripts/install_ruby.sh",
-            "execute_command": "sudo {{.Path}}"
+              {
+                  "type": "ansible",
+                  "playbook_file": "/ansible/packer_app.yml"
           }
-         ]
+               ]
 
 }
+

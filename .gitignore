@@ -6,3 +6,5 @@ packer/variables.json
 .terraform/
 /scripts
 ubuntu16.json
+*.retry
+
