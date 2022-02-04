@@ -40,8 +40,8 @@ class ExampleInventory(object):
         return {
         "group": {
            "hosts": [
-                 "62.84.125.183",
-                 "62.84.124.227"
+                 "51.250.4.212",
+                 "62.84.113.197"
                  ],
            "vars": {
               "ansible_ssh_user": "ubuntu",
@@ -51,10 +51,10 @@ class ExampleInventory(object):
             },
        "_meta": {
           "hostvars": {
-                     "62.84.125.183": {
+                     "51.250.4.212": {
                      "reddit": "db"
                      },
-                     "62.84.124.227": {
+                     "62.84.113.197": {
                      "reddit": "app"
                      }
                   }
