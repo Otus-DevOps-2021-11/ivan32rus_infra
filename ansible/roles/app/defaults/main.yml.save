@@ -1,0 +1,5 @@
+---
+# defaults file for app
+db_host: 1
+env: local
+

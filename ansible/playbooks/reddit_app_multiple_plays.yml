@@ -22,7 +22,7 @@
   tags: app-tag
   become: true
   vars:
-   db_host: 192.168.10.18
+   db_host: 192.168.10.17
   tasks:
     - name: Add unit file for Puma
       copy:

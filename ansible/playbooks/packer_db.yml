@@ -2,7 +2,7 @@
 - name: Install MongoDB 3.2
   hosts: all
   become: true
-  become_user: root
+  #become_user: root
   tasks:
   # Добавим ключ репозитория для последующей работы с ним
   #- name: Update apt-get repo and cache
@@ -15,7 +15,7 @@
   # Подключаем репозиторий с пакетами mongodb
   - name: Add APT repository
     apt_repository:
-      repo: deb [ arch=amd64,arm64 ] http://repo.mongodb.org/apt/ubuntu xenial/mongodb-org/3.2 multiverse
+      repo: deb [ arch=amd64,arm64 ] deb http://repo.mongodb.org/apt/ubuntu xenial/mongodb-org/3.2 multiverse
       state: present
 
   # Выполним установку пакета
