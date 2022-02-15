@@ -1,11 +1,11 @@
 terraform {
   backend "s3" {
     endpoint   = "storage.yandexcloud.net"
-    bucket     = "test-otus"
+    bucket     = "otus"
     region     = "us-east-1"
-    key        = "home/test/DEVOPS_1/terraform.tfstate"
-    access_key = "aGNoNM-_HU3IRuobitDa"
-    secret_key = "9N297By0l5AILqPiCTGnyw1I74O5YqaDQNn-mzwS"
+    key        = "/terraform.tfstate"
+    access_key = "asdasdasTasdasd"
+    secret_key = "asdasdasd_ONghfghfghf34"
 
     skip_region_validation      = true
     skip_credentials_validation = true
