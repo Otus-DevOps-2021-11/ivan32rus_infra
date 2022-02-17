@@ -17,5 +17,5 @@
      msg: "This host is in {{ env }} environment!!!"
 
  - include: install_mongo.yml
- - include: config_mongo.ym   
+ - include: config_mongo.yml   
 
